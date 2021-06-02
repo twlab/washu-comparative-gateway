@@ -1,0 +1,108 @@
+{
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Cow",
+      "assemblies": ["bosTau8"],
+      "url": "https://vizhub.wustl.edu/public/bosTau8/Cow.png"
+    },
+    {
+      "id": 2,
+      "name": "Zebrafish",
+      "assemblies": ["danRer11"],
+      "url": "https://epigenomegateway.wustl.edu/browser/images/Zebrafish.png"
+    },
+    {
+      "id": 3,
+      "name": "Human",
+      "url": "https://epigenomegateway.wustl.edu/browser/images/Human.png",
+      "assemblies": ["hg19", "hg38"]
+    },
+    {
+      "id": 4,
+      "name": "Mouse",
+      "assemblies": ["mm10"],
+      "url": "https://epigenomegateway.wustl.edu/browser/images/Mouse.png"
+    },
+    {
+      "id": 5,
+      "name": "Rat",
+      "assemblies": ["rn4", "rn5"],
+      "url": "https://epigenomegateway.wustl.edu/browser/images/Rat.png"
+    },
+    {
+      "id": 6,
+      "name": "Monkey",
+      "assemblies": ["rheMac3"],
+      "url": "https://epigenomegateway.wustl.edu/browser/images/Rhesus%20macaque.png"
+    },
+    {
+      "id": 7,
+      "name": "Spotted_Gar",
+      "assemblies": ["lepOcu1"],
+      "url": "https://vizhub.wustl.edu/public/lepOcu1/SpottedGar.png"
+    },
+    {
+      "id": 8,
+      "name": "Chimp",
+      "assemblies": ["panTro5"],
+      "url": "https://epigenomegateway.wustl.edu/browser/images/Chimp.png"
+    },
+    {
+      "id": 9,
+      "name": "Arabidopsis",
+      "assemblies": ["danRer7"],
+      "url": "https://epigenomegateway.wustl.edu/browser/images/Arabidopsis.png"
+    }
+  ],
+  "links": [
+    {
+      "source": 1,
+      "target": 4
+    },
+    {
+      "source": 2,
+      "target": 7
+    },
+    {
+      "source": 3,
+      "target": 4
+    },
+    {
+      "source": 3,
+      "target": 5
+    },
+    {
+      "source": 3,
+      "target": 6
+    },
+    {
+      "source": 3,
+      "target": 2
+    },
+    {
+      "source": 3,
+      "target": 8
+    },
+    {
+      "source": 4,
+      "target": 3
+    },
+    {
+      "source": 4,
+      "target": 5
+    },
+    {
+      "source": 4,
+      "target": 6
+    },
+    {
+      "source": 4,
+      "target": 9
+    },
+    {
+      "source": 8,
+      "target": 3
+    }
+  ]
+}
