@@ -1,0 +1,35 @@
+[
+  {
+    "name": "danRer10tohg19", ✅
+    "filetype": "genomealign", ⚠️
+    "label": "Zebrafish danRer10 to hg19 blastz",✅
+    "querygenome": "danRer10",
+    "url": "https://vizhub.wustl.edu/public/hg19/weaver/hg19-danRer10.gz",✅
+    "details": {
+      "source": "UCSC Genome Browser",
+      "download url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg19/vsDanRer10/axtNet/"
+    }
+  },
+  {
+    "name": "danRer10tohg19",✅ SOURCEtoTARGET
+    "type": "genomealign", <- filetype / type ⚠️
+    "label": "Zebrafish danRer10 to hg19 blastz",✅
+    "filetype": "genomealign",✅
+    "options": { "label": "Zebrafish danRer10 to hg19 blastz" }, 🆕
+    "url": "https://vizhub.wustl.edu/public/hg19/weaver/hg19-danRer10.gz",✅
+    "details": {
+      "source": "UCSC Genome Browser",
+      "download url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg19/vsDanRer10/axtNet/"
+    } ----👇🏻
+    "metadata": { "Track type": "genomealign", "genome": "hg19" }, 🚨 TARGET
+    "isSelected": false,
+    "fileObj": "",
+    "files": [],
+    "tracks": [],
+    "querygenome": "danRer10", 🚨 SOURCE
+    "isText": false,
+    "textConfig": {},
+    "apiConfig": {},
+    "queryEndpoint": {},
+  }
+]

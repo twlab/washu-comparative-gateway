@@ -12,18 +12,24 @@
     "@rollup/plugin-commonjs": "^17.0.0",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^11.0.0",
+    "@zerodevx/svelte-json-view": "^0.1.3",
+    "@zerodevx/svelte-toast": "^0.5.1",
     "autoprefixer": "^10.2.6",
     "rollup": "^2.3.4",
     "rollup-plugin-css-only": "^3.1.0",
     "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-string": "^3.0.0",
     "rollup-plugin-svelte": "^7.0.0",
     "rollup-plugin-terser": "^7.0.0",
     "svelte": "^3.0.0",
+    "svelte-icon": "^1.2.0",
     "svelte-preprocess": "^4.7.3",
     "tailwindcss": "^2.1.3"
   },
   "dependencies": {
+    "axios": "^0.21.4",
     "d3": "^6.7.0",
-    "sirv-cli": "^1.0.0"
+    "sirv-cli": "^1.0.0",
+    "uuid": "^8.3.2"
   }
 }

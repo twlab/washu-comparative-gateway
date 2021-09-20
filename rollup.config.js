@@ -6,6 +6,7 @@ import sveltePreprocess from 'svelte-preprocess';
 import {terser} from 'rollup-plugin-terser';
 import css from 'rollup-plugin-css-only';
 import json from "@rollup/plugin-json";
+import {string} from 'rollup-plugin-string';
 
 const production = !process.env.ROLLUP_WATCH;
 const preprocess = sveltePreprocess({
@@ -68,6 +69,7 @@ export default {
 				// the documentation for details:
 				// https://github.com/rollup/plugins/tree/master/packages/commonjs
 				resolve({browser: true, dedupe: ['svelte']}),
+				string({include: 'src/img/**/*.svg'}),
 				commonjs(),
 
 				// In dev mode, call `npm run start` once the bundle has been generated

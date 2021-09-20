@@ -53,6 +53,36 @@
       "name": "Arabidopsis",
       "assemblies": ["danRer7"],
       "url": "https://epigenomegateway.wustl.edu/browser/images/Arabidopsis.png"
+    },
+    {
+      "id": 10,
+      "name": "Yeast",
+      "assemblies": ["sacCer3"],
+      "url": "https://epigenomegateway.wustl.edu/browser/images/Yeast.png"
+    },
+    {
+      "id": 11,
+      "name": "Seahare",
+      "assemblies": ["aplCal3"],
+      "url": "https://vizhub.wustl.edu/public/aplCal3/seaHare.png"
+    },
+    {
+      "id": 12,
+      "name": "Chicken",
+      "assemblies": ["galGal5", "galGal6"],
+      "url": "https://epigenomegateway.wustl.edu/browser/images/Chicken.png"
+    },
+    {
+      "id": 13,
+      "name": "C_elegans",
+      "assemblies": ["ce11"],
+      "url": "https://epigenomegateway.wustl.edu/legacy/images/C.elegans.png"
+    },
+    {
+      "id": 14,
+      "name": "Drosophila_melanogaster",
+      "assemblies": ["dm6"],
+      "url": "https://epigenomegateway.wustl.edu/legacy/images/Fruit%20fly.png"
     }
   ],
   "links": [
@@ -103,6 +133,26 @@
     {
       "source": 8,
       "target": 3
+    },
+    {
+      "source": 3,
+      "target": 10
+    },
+    {
+      "source": 3,
+      "target": 11
+    },
+    {
+      "source": 3,
+      "target": 12
+    },
+    {
+      "source": 3,
+      "target": 13
+    },
+    {
+      "source": 3,
+      "target": 14
     }
   ]
 }

@@ -1,12 +1,14 @@
-####Live demo :
+#### Live demo :
+
 [WashU Comparative Gateway](https://comparative-portal.vercel.app)
 
 ## Get started
 
-Install the dependencies...
+- Clone the repo
+- Install the dependencies...
 
 ```bash
-cd svelte-app
+cd washu-comparative-gateway
 npm install
 ```
 
