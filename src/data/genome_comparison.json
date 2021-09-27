@@ -1,16 +1,23 @@
 [
   {
-    "genome": "bosTau8",
-    "comparisons": [
+    "id": 1,
+    "name": "Cow",
+    "thumbnail": "https://vizhub.wustl.edu/public/bosTau8/Cow.png",
+    "assemblies": [
       {
-        "name": "bosTau8tomm10",
-        "label": "Blastz using bosTau8 as reference and mm10 as query",
-        "querygenome": "mm10",
-        "metadata": {
-          "genome": "mm10"
-        },
-        "filetype": "genomealign",
-        "url": "https://vizhub.wustl.edu/public/bosTau8/weaver/bosTau8_mm10_axt.gz"
+        "genome": "bosTau8",
+        "comparisons": [
+          {
+            "name": "bosTau8tomm10",
+            "label": "Blastz using bosTau8 as reference and mm10 as query",
+            "querygenome": "mm10",
+            "metadata": {
+              "genome": "mm10"
+            },
+            "filetype": "genomealign",
+            "url": "https://vizhub.wustl.edu/public/bosTau8/weaver/bosTau8_mm10_axt.gz"
+          }
+        ]
       }
     ]
   },
@@ -27,20 +34,27 @@
     ]
   },
   {
-    "genome": "danRer11",
-    "comparisons": [
+    "id": 2,
+    "name": "Zebrafish",
+    "thumbnail": "https://epigenomegateway.wustl.edu/browser/images/Zebrafish.png",
+    "assemblies": [
       {
-        "name": "danRer11tolepOcu1",
-        "label": "Ensembl lastz using zebrafish danRer11 as reference and lepOcu1 as query",
-        "querygenome": "lepOcu1",
-        "filetype": "genomealign",
-        "url": "https://vizhub.wustl.edu/public/danRer11/weaver/danRer11.lepocu1.gz"
+        "genome": "danRer11",
+        "comparisons": [
+          {
+            "name": "danRer11tolepOcu1",
+            "label": "Ensembl lastz using zebrafish danRer11 as reference and lepOcu1 as query",
+            "querygenome": "lepOcu1",
+            "filetype": "genomealign",
+            "url": "https://vizhub.wustl.edu/public/danRer11/weaver/danRer11.lepocu1.gz"
+          }
+        ]
+      },
+      {
+        "genome": "danRer7",
+        "comparisons": []
       }
     ]
-  },
-  {
-    "genome": "danRer7",
-    "comparisons": []
   },
   {
     "genome": "gorGor3",
