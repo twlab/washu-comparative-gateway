@@ -17,6 +17,8 @@
   import * as JSONdata from './data/genomes.json';
   import GenomeComparisonJSON from './data/genome_comparison.json';
   import CompareSelector from './lib/CompareSelector.svelte';
+  const GENOME_COMPARISONS_URL =
+    'https://raw.githubusercontent.com/twlab/washu-comparative-gateway/main/src/data/genome_comparison.json';
 
   const POST_DATAHUB_URL =
     'https://hcwxisape8.execute-api.us-east-1.amazonaws.com/dev/datahub';
@@ -30,11 +32,16 @@
   let comparisons = [];
   let sourceAssembly;
   let targetAssemblies = [];
+  let GenomeComparisonJSONData = [];
   let UUID;
   JSONdata.nodes.forEach(function (n) {
     idToNode[n.id] = n;
     nodeDetailsByName[n.name] = n;
   });
+
+  function generateTreeJSONdata(genomeComparisons) {
+    console.log(genomeComparisons);
+  }
 
   const submit = (event) => {
     const { values } = event.detail;
@@ -50,7 +57,17 @@
     comparisons = createDatahubBlock(values);
   };
 
-  onMount(() => {
+  onMount(async () => {
+    try {
+      const resGenomeComparisonsURLresponse = await fetch(
+        GENOME_COMPARISONS_URL
+      );
+      GenomeComparisonJSONData = await resGenomeComparisonsURLresponse.json();
+      generateTreeJSONdata(GenomeComparisonJSONData);
+    } catch (error) {
+      console.log(error);
+    }
+
     const dispatcher = d3.dispatch('filterCategories');
     const start = new Start(dispatcher, JSONdata);
     start.init();
@@ -108,7 +125,16 @@
 
     let label, url;
 
-    const queryBlock = GenomeComparisonJSON.filter((d) => d.name === key);
+    const sourceGenome = GenomeComparisonJSONData.filter(
+      (d) => d.genome === source
+    );
+    if (sourceGenome.length === 0) {
+      throw Error(`Genome ${source} not found!`);
+    }
+
+    const queryBlock = sourceGenome[0].comparisons.filter(
+      (d) => d.querygenome === target
+    );
     if (queryBlock.length > 0) {
       label = queryBlock[0].label;
       url = queryBlock[0].url;
