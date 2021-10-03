@@ -585,20 +585,6 @@
     "thumbnail": "https://epigenomegateway.wustl.edu/browser/images/Chimp.png"
   },
   {
-    "id": 9,
-    "name": "Arabidopsis",
-    "assemblies": ["araTha1"],
-    "comparison_targets": [],
-    "thumbnail": "https://epigenomegateway.wustl.edu/browser/images/Arabidopsis.png"
-  },
-  {
-    "id": 10,
-    "name": "Yeast",
-    "assemblies": ["sacCer3"],
-    "comparison_targets": [],
-    "thumbnail": "https://epigenomegateway.wustl.edu/browser/images/Yeast.png"
-  },
-  {
     "id": 11,
     "name": "Seahare",
     "assemblies": ["aplCal3"],
@@ -614,14 +600,14 @@
   },
   {
     "id": 13,
-    "name": "C_elegans",
+    "name": "C. elegans",
     "assemblies": ["ce11"],
     "comparison_targets": [],
     "thumbnail": "https://epigenomegateway.wustl.edu/legacy/images/C.elegans.png"
   },
   {
     "id": 14,
-    "name": "Drosophila_melanogaster",
+    "name": "Drosophila melanogaster",
     "assemblies": ["dm6"],
     "comparison_targets": [],
     "thumbnail": "https://epigenomegateway.wustl.edu/legacy/images/Fruit%20fly.png"
