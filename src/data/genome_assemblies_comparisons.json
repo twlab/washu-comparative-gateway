@@ -551,7 +551,7 @@
   {
     "id": 8,
     "name": "Chimp",
-    "assemblies": ["panTro4", "panTro5"],
+    "assemblies": ["panTro4", "panTro5", "panTro6"],
     "comparison_targets": [
       {
         "genome": "panTro4",
