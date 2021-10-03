@@ -25,7 +25,7 @@
   {
     "id": 2,
     "name": "Zebrafish",
-    "assemblies": ["danRer11", "danRer7"],
+    "assemblies": ["danRer11", "danRer7", "danRer10"],
     "comparison_targets": [
       {
         "genome": "danRer11",
@@ -517,14 +517,14 @@
   {
     "id": 5,
     "name": "Rat",
-    "assemblies": ["rn4", "rn5"],
+    "assemblies": ["rn4", "rn5", "rn6"],
     "comparison_targets": [],
     "thumbnail": "https://epigenomegateway.wustl.edu/browser/images/Rat.png"
   },
   {
     "id": 6,
     "name": "Monkey",
-    "assemblies": ["rheMac3"],
+    "assemblies": ["rheMac3", "rheMac8"],
     "comparison_targets": [
       {
         "genome": "rheMac3",
